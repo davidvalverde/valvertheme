@@ -1,2 +1,2 @@
-# valvertheme
-WordPress Theme for portfolio
+# ValverTheme
+WordPress Theme for portfolio.
