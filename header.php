@@ -33,17 +33,8 @@
                         </section>
 
                         <a class="header__menu__toggle" href="#" id="nav-open"></a>
-                        <nav class='header__menu' id='main-navigation'>
-                            <ul>
-                                <li class='header__menu__option'><a href='<?php echo site_url(); ?>/../' title='Inicio'>INICIO</a></li>
-                                <li class='header__menu__option'><a href='<?php echo site_url(); ?>/../about/' title='David'>DAVID</a></li>
-                                <li class='header__menu__option'><a href='<?php echo site_url(); ?>/../portfolio/' title='Proyectos'>PROYECTOS</a></li>
-                                <li class='header__menu__option'><a href='<?php echo site_url(); ?>/../services/' title='Servicios'>SERVICIOS</a></li>
-                                <li class='header__menu__option'><a href='<?php echo site_url(); ?>/../blog/' title='Blog'>BLOG</a></li>
-                                <li class='header__menu__option'><a href='<?php echo site_url(); ?>/../contact/' title='Contacto'>CONTACTO</a></li>
-                                <li class='header__menu__option'><a href='<?php echo site_url(); ?>/../newsletter/' title='Newsletter'>NEWSLETTER</a></li>
-                            </ul>
-                        </nav>
+
+                        <?php include TEMPLATEPATH . '/templates/header-menu.php'; ?>
 
                     </section>
 

@@ -1,7 +1,9 @@
 <?php
 
 /**
- * El título.
+ * Genera el título de la página. Normalmente para rellenar el tag title.
+ *
+ * @param string $append Texto a añadir siempre al final del título.
  */
 function dv_title($append = '') {
     $title = '';
@@ -55,3 +57,16 @@ function dv_title($append = '') {
     }
     return $title;
 }
+
+/**
+ * Registro de los menús de las páginas.
+ */
+function register_my_menus() {
+    register_nav_menus(
+        array(
+            'main-menu' => __('Menú primario'),
+            'secondary-menu' => __('Menú secundario')
+        )
+    );
+}
+add_action('init', 'register_my_menus');
