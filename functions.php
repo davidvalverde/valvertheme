@@ -3,7 +3,7 @@
 /**
  * El título.
  */
-function dv_title($append = ', por @davidvalverde') {
+function dv_title($append = '') {
     $title = '';
 
     if (is_single()) {
@@ -48,6 +48,10 @@ function dv_title($append = ', por @davidvalverde') {
         $title .= 'Blog';
     }
 
-    $title .= $append;
+    if (empty($append)) {
+        $title .= ' - ' . get_bloginfo('name');
+    } else {
+        $title .= $append;
+    }
     return $title;
 }

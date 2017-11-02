@@ -1,4 +1,9 @@
-</body>
-<script src="https://use.fontawesome.com/ab3c7e2a3f.js"></script>
+            </div>
+        </main>
+
+    </div>
+
 <?php wp_footer(); ?>
+
+</body>
 </html>
